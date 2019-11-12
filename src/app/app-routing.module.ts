@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ListUserComponent } from './list-user/list-user.component';
-import { NewUserComponent } from './new-user/new-user.component';
-import { UpdateUserComponent } from './update-user/update-user.component';
+import { ContactListComponent } from './contact-list/contact-list.component';
+import { AddContactComponent } from './add-contact/add-contact.component';
+import { UpdateContactComponent } from './update-contact/update-contact.component';
 
 const routes: Routes = [{ path : '', redirectTo : 'index', pathMatch : 'full'},
-                        { path : 'index', component : ListUserComponent },
-                        { path : 'add', component : NewUserComponent },
-                        { path : 'update', component : UpdateUserComponent }
+                        { path : 'index', component : ContactListComponent },
+                        { path : 'add', component : AddContactComponent },
+                        { path : 'update', component : UpdateContactComponent }
                         ];
 
 @NgModule({

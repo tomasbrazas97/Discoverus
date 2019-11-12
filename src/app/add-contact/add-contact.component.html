@@ -1,0 +1,38 @@
+<body>
+  <div class="test">
+    <img class="banner" src="../../assets/home.jpg">
+    <div class="center"><h3>Managing contacts has never been easier!</h3></div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <h3 style="margin: 5px">User List</h3>
+      <table class="table">
+        <thead>
+        <tr>
+          <th scope="col">#<img width="25px" height="25px" src="../../assets/contactIcon.png"></th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Phone</th>
+          <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let c of contacts; let i = index">
+          <th scope="row">{{i+1}}</th>
+          <td>{{c.name}}</td>
+          <td>{{c.email}}</td>
+          <td>{{c.phone}}</td>
+          <td>
+            <button type="button"  class="btn btn-primary" (click)="update(c._id)">Update</button>
+            <button type="button" style="margin-left: 5px" (click)="delete(c._id)" class="btn btn-danger">Delete</button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+</body>
+

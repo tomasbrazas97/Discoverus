@@ -5,18 +5,18 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NewUserComponent } from './new-user/new-user.component';
-import { UpdateUserComponent } from './update-user/update-user.component';
-import { ListUserComponent } from './list-user/list-user.component';
+import { ContactListComponent } from './contact-list/contact-list.component';
+import { AddContactComponent } from './add-contact/add-contact.component';
+import { UpdateContactComponent } from './update-contact/update-contact.component';
 
-import { UserService } from './User.service';
+import { ContactService } from './contact.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NewUserComponent,
-    UpdateUserComponent,
-    ListUserComponent
+    ContactListComponent,
+    AddContactComponent,
+    UpdateContactComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +24,7 @@ import { UserService } from './User.service';
     HttpClientModule,
     FormsModule
   ],
-  providers: [UserService],
+  providers: [ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

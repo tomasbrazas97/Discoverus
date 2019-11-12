@@ -1,0 +1,35 @@
+page-contact-list {
+
+}
+
+.container {
+    background-color: lightblue;
+    border-style: solid;
+}
+
+body {
+    background-color: lightblue
+}
+
+.banner {
+    margin-bottom: 10px;
+    padding-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    width: 1000px;
+    opacity: 0.45;
+}
+
+.test {
+    position: relative;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
