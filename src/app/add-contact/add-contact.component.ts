@@ -22,7 +22,7 @@ export class AddContactComponent implements OnInit {
     event.preventDefault();
     // calling add method in  contact service
     this.contact.add(name, email, phone).subscribe((data) => {
-      alert('Contact Inserted');
+      alert('User Inserted');
       // navigate user to contact list
       this.route.navigate(['index']);
     });

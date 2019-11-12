@@ -30,7 +30,7 @@ export class UpdateContactComponent implements OnInit {
     event.preventDefault();
     this.contact.update(name, email, phone, this.contact.id).subscribe((data) => {
       console.log(data)
-      alert('Contact Updated');
+      alert('User Updated');
       this.route.navigate(['index']);
     });
   }
