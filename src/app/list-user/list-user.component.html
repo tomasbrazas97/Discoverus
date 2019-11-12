@@ -1,0 +1,28 @@
+
+  <div class="container">
+    <div class="row">
+      <h3 style="margin: 5px">User List</h3>
+      <table class="table">
+        <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Phone</th>
+          <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let u of users; let i = index">
+          <th scope="row">{{i+1}}</th>
+          <td>{{u.name}}</td>
+          <td>{{u.email}}</td>
+          <td>{{u.phone}}</td>
+          <td>
+            <button type="button"  class="btn btn-primary" (click)="update(u._id)">Update</button>
+            <button type="button" style="margin-left: 5px" (click)="delete(u._id)" class="btn btn-danger">Delete</button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

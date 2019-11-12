@@ -1,0 +1,19 @@
+
+.nav-item {
+    border-style: inset;
+    border-width: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+    border-color: lightblue;
+    border-radius: 10px;
+}
+
+.navbar-brand {
+    margin-right: 100px;
+    text-align: center;
+    font-family: "Times New Roman";
+    font-size: 1.875em;
+}
