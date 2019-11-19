@@ -11,17 +11,18 @@ export class AddContactComponent implements OnInit {
   cemail = ''
   cname = ''
   cphone = ''
+  cpass = ''
   constructor(private contact: ContactService, private route: Router) { }
 
   ngOnInit() {
     // setting id to empty it will only be set through update method
     this.contact.id = '';
   }
-  add = function(event, name, email, phone){
+  add = function(event, name, email, phone, pass){
     // overriding html form behaviour
     event.preventDefault();
     // calling add method in  contact service
-    this.contact.add(name, email, phone).subscribe((data) => {
+    this.contact.add(name, email, phone, pass).subscribe((data) => {
       alert('User Inserted');
       // navigate user to contact list
       this.route.navigate(['index']);

@@ -10,13 +10,15 @@ import { AddContactComponent } from './add-contact/add-contact.component';
 import { UpdateContactComponent } from './update-contact/update-contact.component';
 
 import { ContactService } from './contact.service';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContactListComponent,
     AddContactComponent,
-    UpdateContactComponent
+    UpdateContactComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

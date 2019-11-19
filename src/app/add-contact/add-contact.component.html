@@ -15,6 +15,10 @@
           <label for="phone">Phone</label>
           <input type="number" [(ngModel)]="cphone" class="form-control" name="phone" #phone="ngModel" id="phone" required placeholder="0333586467">
         </div>
+        <div class="form-group">
+          <label for="phone">Password</label>
+          <input type="text" [(ngModel)]="cpass" class="form-control" name="pass" #pass="ngModel" id="pass" required placeholder="********">
+        </div>
         <button type="submit"  class="btn btn-primary" [disabled]="!addForm.form.valid">Submit</button>
       </form>
     </div>
